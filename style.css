@@ -477,6 +477,121 @@ font-size: 52px;
     display: flex;
     z-index: 10;
 }
+
+
+
+
+
+
+
+
+
+
+.footer__content {
+    margin-top: 1rem;
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .footer__content p {
+    font-size: 20px;
+    margin: 0px;
+    font-weight: 5500;
+    color: var(--white);
+    line-height: 1.75rem;
+  }
+  
+  
+  .footer__content h2 {
+    font-size: 20px;
+    color: var(--white);
+  }
+
+  .footer__content h1 {
+    font-size: 30px;
+    color: var(--white);
+    text-align: center;
+  }
+  
+  .footer__links {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .footer__links li {
+    display: flex;
+    align-items: center;
+    gap: 0rem;
+    font-weight: 500;
+    color: var(--white);
+  }
+  
+  .footer__links li span {
+    font-size: 1.25rem;
+  }
+
+.icon-loc {
+    font-size: 30px;
+    margin-right: 10px;
+}
+.about-img{
+    width: 300px;
+    margin-top: 22px;
+    margin-left: 12%;
+}
+
+
+/* نمط لحاوية النموذج */
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 50px auto;
+    width: 300px;
+  }
+  
+  /* نمط للحقول النصية والأزرار */
+  input[type="text"], button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .WhatsApp {
+    background-color: #4CAF50; /* لون أخضر */
+    color: white;
+    cursor: pointer;
+  }
+
+  .telegram {
+    background-color: #4c6daf; /* لون أخضر */
+    color: white;
+    cursor: pointer;
+  }
+
+  
+  /* نمط لعنصر div لعرض النتائج */
+  #result {
+    margin-top: 10px;
+    font-weight: bold;
+    color: green;
+  }
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:1750px) {
 
     .main-highlight {

@@ -354,6 +354,168 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+.section__header {
+    font-family: "Noto Kufi Arabic", sans-serif;
+    color: var(--blackColor);
+    text-align: center;
+    line-height: 3.75rem;
+    text-shadow: 2px 2px var(--seconderyColor);
+    margin-bottom: 5px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+img {
+    display: flex;
+    width: 100%;
+}
+.section__description {
+    color: var(--blackColor);
+    line-height: 1.75rem;
+    font-size: 22px;
+    word-wrap: break-word;
+
+}
+
+
+
+.destination__grid {
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+}
+.destination__card {
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.destination__details {
+    background-color: var(--greyColor);
+    padding: 1rem 1.5rem;
+}
+.destination__details div {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.destination__details h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-light);
+}
+.destination__details p {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    color: var(--text-light);
+}
+.destination__details p span {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    transform: rotateY(180deg);
+}
+
+
+
+.order__container h3 {
+    max-width: fit-content;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    padding: 0.5rem 2rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: "Noto Kufi Arabic", sans-serif;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    word-wrap: break-word;
+    white-space: normal;
+}
+.order__container h5 {
+    max-width: fit-content;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    word-wrap: break-word;
+    white-space: normal;
+    font-family: "Noto Kufi Arabic", sans-serif;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+.order__container .section__title {
+    font-size: 10rem;
+}
+.order__container .section__description {
+    margin-bottom: 2.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.order__grid {
+    display: grid;
+    gap: 2rem 1rem;
+}
+.order__card {
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: 0.3s;
+}
+.order__card:hover {
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+}
+.order__card img {
+    max-width: 250px;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 0.3));
+}
+.order__card h4 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+.order__card p {
+    margin-bottom: 2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    line-height: 1.75rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .marquee {
     margin-top: 15px;
     font-size: 50px;
@@ -1067,7 +1229,7 @@ input[type="text"], button {
         color: var(--blackColor);
         border-radius: 10px;
         border: 1px solid var(--softGreenColor);
-        font-size: 18px;
+        font-size: 12px;
         cursor: pointer;
         
     }

@@ -43,14 +43,14 @@ $(".back-menus").bind("click" , function(e){
     e.preventDefault();
     currentIndex = Math.max(0, currentIndex - 1);
     $(".filter-wrapper").animate({
-        scrollLeft: currentIndex * step / 3
+        scrollLeft: currentIndex * step 
     })
 });
 $(".next-menus").bind("click" , function(e){
     e.preventDefault();
     currentIndex = Math.min(currentIndex + 1, $(".highlight-card").length - 1); // تأكد أن المؤشر لا يتجاوز عدد العناصر
     $(".filter-wrapper").animate({
-        scrollLeft: currentIndex * step
+        scrollLeft: currentIndex * step 
     });
 });
 

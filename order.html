@@ -43,32 +43,77 @@
 
 
     <br><br>
-    <h1 class="title-order">ادخل اسمك وطلبك </h1>
+    <h1 class="title-order"> اكمل عملية الطلب </h1>
+    <br>
+    <h3 id="order" placeholder="ادخل طلبك" class="title-order"></h3>
     <br>
     <input type="text" id="name" placeholder="ادخل اسمك">
-    <br>
-    <input type="text" id="order" placeholder="ادخل طلبك">
     <br>
     <input type="text" id="adress" placeholder="ادخل عنوانك">
     <br>
     <button class="WhatsApp" onclick="openWhatsApp()">أطلب عن طريق واتساب</button>
     <button class="telegram" onclick="openTelegram()">أطلب عن طريق تليجرام</button>
     <div id="result"></div>
- 
-
+    <button class="delete-btn" id="clearCart">تفريغ سلة التسوق</button>
 
     <!------------------------------------------------------------>
 
         
     </div>
 
+    <script>
+        const orderElement = document.getElementById("order");
+        const storedData = localStorage.getItem("cartItems");
 
+        if (storedData) {
+        const dishes = JSON.parse(storedData);
+        const dishCounts = {};
+
+        const list = document.createElement('ul');
+        dishes.forEach(dish => {
+            dishCounts[dish.name] = (dishCounts[dish.name] || 0) + 1;
+        });
+
+        // هنا نبدأ في الجزء الجديد لتخزين البيانات المعدلة
+        const updatedData = [];
+        for (const dishName in dishCounts) {
+            updatedData.push({
+            name: dishName,
+            count: dishCounts[dishName]
+            });
+        }
+
+        localStorage.setItem("userData", JSON.stringify(updatedData));
+
+        // الجزء المتعلق بعرض البيانات يبقى كما هو
+        for (const dishName in dishCounts) {
+            const listItem = document.createElement('li');
+            listItem.textContent = `${dishName} (عدد الطلبات: ${dishCounts[dishName]})`;
+            list.appendChild(listItem);
+        }
+
+        orderElement.appendChild(list);
+        } else {
+        orderElement.textContent = "لا توجد بيانات مخزنة";
+        }
+
+        const clearCartButton = document.getElementById('clearCart');
+
+        function clearLocalStorage() {
+        localStorage.clear(); 
+        alert('تم تفريغ سلة التسوق بنجاح');
+        location.reload();
+        }
+
+        clearCartButton.addEventListener('click', clearLocalStorage);
+    </script>
 </body>
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="app.js"></script>       
 <script src="JavaScript.js"></script>
+<script src="../script.js"></script>
+<script src="app.js"></script>       
 
 </html>

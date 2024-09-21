@@ -547,18 +547,6 @@ img {
     border-radius: 30px;
     justify-self: center;
 }
-.myButtono {
-    max-width: 500px;
-    background: var(--greyColor) ;
-    color: var(--primaryColor);
-    margin-inline: auto;
-    margin-top: 1rem;
-    font-size: 20px;
-    font-family: "Noto Kufi Arabic", sans-serif;
-    text-align: center;
-    border-radius: 30px;
-    justify-self: center;
-}
 .hidden {
     display: none;
     opacity: 0;
@@ -576,25 +564,14 @@ position: fixed;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-box-shadow: 0 0 10px rgba(255, 255, 255, 1),
-0 0 20px rgb(255, 255, 255),
-0 0 20px rgb(255, 183, 0);
 }
-#messageBoxo {
+.phonesnum{
     background-color: #ffffff;
     color: #000000;
-    border: 1px solid #000000;
-    padding: 15px;
-    width: 900px;
-    height: 600px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 1),
-    0 0 20px rgb(255, 255, 255),
-    0 0 20px rgb(255, 183, 0);
-}
+    justify-self: center;
+    text-align: center;
+    font-size: 20px;
+}  
 #messageBox h3 {
 background-color: var(--whiteColor);
 color: #000000;
@@ -744,7 +721,42 @@ input[type="text"], button {
     font-weight: bold;
     color: green;
 }
+.delete-btn{
+    background-color: #ff4343;
+    color: white;
+    cursor: pointer;  
+}
 
+
+
+
+
+
+
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.menu-item {
+    padding: 5px;
+    cursor: pointer;
+    background-color: var(--greyColor);
+}
+.counter {
+    position: fixed;
+    top: 91%;
+    right: 10px;
+    color: rgb(255, 255, 255);
+    background: #fc3333;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    font-size: 20px;
+}
 
 
 @media screen and (max-width:1750px) {
@@ -1238,7 +1250,7 @@ input[type="text"], button {
     .destination__details {
         padding: 1rem 0.3rem;
     }
-      .destination__details div {
+    .destination__details div {
         margin-bottom: 1rem;
         display: flex;
         align-items: center;
@@ -1261,6 +1273,62 @@ input[type="text"], button {
     }
 }
 @media screen and (max-width:415px) {
+    .myButton {
+        max-width: 500px;
+        background: var(--greyColor) ;
+        color: var(--primaryColor);
+        margin-inline: auto;
+        margin-top: 1rem;
+        font-size: 45px;
+        font-family: "Noto Kufi Arabic", sans-serif;
+        text-align: center;
+        border-radius: 30px;
+        justify-self: center;
+    }
+    .hidden {
+        display: none;
+        opacity: 0;
+        transform: translateY(-50px); /* تحريك العنصر لأعلى قليلاً قبل الظهور */
+        transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); /* منحنى بيزي مخصص */
+    }
+    #messageBox {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid var(--primaryColor);
+    padding: 15px;
+    width: 900px;
+    height: 600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    .phonesnum{
+        background-color: #ffffff;
+        color: #000000;
+        justify-self: center;
+        text-align: center;
+        font-size: 20px;
+    }  
+    #messageBox h3 {
+    background-color: var(--whiteColor);
+    color: #000000;
+    justify-self: center;
+    text-align: center;
+    font-size: 20px;
+    }
+    .show {
+        background-color: #ffffff;
+        color: #000000;
+        font-size: 20px;
+        display: block;
+        width: 350px;
+        height: 300px;
+        border-radius: 30px;
+        opacity: 0.9;
+        transform: translateY(0);
+        animation-duration: 1s; /* تغيير مدة التحريك */
+    }
     .destination__grid {
         margin-top: 4rem;
         display: flex;
@@ -1283,7 +1351,7 @@ input[type="text"], button {
     .destination__details {
         padding: 1rem 0.3rem;
     }
-      .destination__details div {
+    .destination__details div {
         margin-bottom: 1rem;
         display: flex;
         align-items: center;
@@ -1411,8 +1479,8 @@ input[type="text"], button {
         
     }
     .highlight-img {
-        width: 120px;
-        height: 120px;
+        width: 140px;
+        height: 140px;
         border-radius: 10px;
         object-fit: cover;
         object-position: center;
@@ -1472,3 +1540,4 @@ input[type="text"], button {
 
     }
 }
+

@@ -118,12 +118,16 @@
         orderElement.textContent = "لا توجد بيانات مخزنة";
         }
 
+
         const clearCartButton = document.getElementById('clearCart');
 
         function clearLocalStorage() {
-        localStorage.clear(); 
-        alert('تم تفريغ سلة التسوق بنجاح');
-        location.reload();
+        const confirmed = confirm("هل أنت متأكد من رغبتك في تفريغ سلة التسوق؟");
+        if (confirmed) {
+            localStorage.clear();
+            alert('تم تفريغ سلة التسوق بنجاح');
+            location.reload();
+        }
         }
 
         clearCartButton.addEventListener('click', clearLocalStorage);

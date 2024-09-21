@@ -726,11 +726,11 @@ input[type="text"], button {
     color: white;
     cursor: pointer;  
 }
-
-
-
-
-
+.icon-2{
+    font-size: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
 
 
 
@@ -745,6 +745,7 @@ input[type="text"], button {
     background-color: var(--greyColor);
 }
 .counter {
+    display: inline-block;
     position: fixed;
     top: 91%;
     right: 10px;
@@ -756,6 +757,12 @@ input[type="text"], button {
     padding-bottom: 5px;
     border-radius: 20px;
     font-size: 20px;
+}
+.icon-1{
+    font-size: 30px;
+    vertical-align: middle;
+    margin-left: 10px;
+
 }
 
 

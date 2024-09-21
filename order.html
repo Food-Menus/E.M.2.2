@@ -43,7 +43,7 @@
 
 
     <br><br>
-    <h1 class="title-order"> اكمل عملية الطلب </h1>
+    <h1 class="title-ordero"> اكمل عملية الطلب </h1>
     <br>
     <h3 id="order" placeholder="ادخل طلبك" class="title-order"></h3>
     <br>
@@ -81,16 +81,33 @@
             name: dishName,
             count: dishCounts[dishName]
             });
+
+            const listItem = document.createElement('li');
+            listItem.textContent = `${dishName} (عدد الطلبات: ${dishCounts[dishName]})`;
+
+            // إضافة زر حذف مع تنسيق CSS
+            const deleteButton = document.createElement('button');
+            deleteButton.textContent = 'حذف العنصر'; // استخدام رمز "×" لتمثيل حذف
+            deleteButton.classList.add('delete-button'); // إضافة فئة للتنسيق
+
+            deleteButton.addEventListener('click', () => {
+            // حذف العنصر من القائمة
+            listItem.remove();
+
+            // حذف العنصر من الـ localStorage
+            const updatedData = JSON.parse(localStorage.getItem("userData"));
+            updatedData = updatedData.filter(item => item.name !== dishName);
+            localStorage.setItem("userData", JSON.stringify(updatedData));
+
+            // تحديث عرض القائمة (يمكنك إضافة رسالة تأكيد هنا)
+            alert('تم حذف العنصر بنجاح');
+            });
+
+            listItem.appendChild(deleteButton);
+            list.appendChild(listItem);
         }
 
         localStorage.setItem("userData", JSON.stringify(updatedData));
-
-        // الجزء المتعلق بعرض البيانات يبقى كما هو
-        for (const dishName in dishCounts) {
-            const listItem = document.createElement('li');
-            listItem.textContent = `${dishName} (عدد الطلبات: ${dishCounts[dishName]})`;
-            list.appendChild(listItem);
-        }
 
         orderElement.appendChild(list);
         } else {

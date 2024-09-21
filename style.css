@@ -691,7 +691,11 @@ font-size: 52px;
 }
 .title-order{
     text-align: center;
-
+    font-size: 17px;
+}
+.title-ordero{
+    text-align: center;
+    font-size: 30px;
 }
 input[type="text"], button {
     display: flex;
@@ -710,6 +714,7 @@ input[type="text"], button {
     background-color: #4CAF50;
     color: white;
     cursor: pointer;
+    
 }
 .telegram {
     background-color: #4c6daf;
@@ -731,7 +736,14 @@ input[type="text"], button {
     vertical-align: middle;
     margin-right: 10px;
 }
-
+.delete-button {
+    color: #f5f5f5;
+    background-color: #ff4343;
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+}
 
 
 .menu {

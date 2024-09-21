@@ -87,20 +87,24 @@
 
             // إضافة زر حذف مع تنسيق CSS
             const deleteButton = document.createElement('button');
-            deleteButton.textContent = 'حذف العنصر'; // استخدام رمز "×" لتمثيل حذف
-            deleteButton.classList.add('delete-button'); // إضافة فئة للتنسيق
+            deleteButton.textContent = 'حذف العنصر'; 
+            deleteButton.classList.add('delete-button'); 
 
-            deleteButton.addEventListener('click', () => {
+            deleteButton.addEventListener('click', function() {
             // حذف العنصر من القائمة
-            listItem.remove();
+            this.parentNode.remove();
 
             // حذف العنصر من الـ localStorage
-            const updatedData = JSON.parse(localStorage.getItem("userData"));
-            updatedData = updatedData.filter(item => item.name !== dishName);
-            localStorage.setItem("userData", JSON.stringify(updatedData));
+            const storedData = JSON.parse(localStorage.getItem("cartItems"));
+            const itemToDelete = this.parentNode.textContent.split(' (')[0]; // افترضنا أن اسم العنصر هو الجزء الأول من نص العنصر في القائمة
+            const indexToDelete = storedData.findIndex(item => item.name === itemToDelete);
+            if (indexToDelete !== -1) {
+                storedData.splice(indexToDelete, 1);
+                localStorage.setItem("cartItems", JSON.stringify(storedData));
+            }
 
-            // تحديث عرض القائمة (يمكنك إضافة رسالة تأكيد هنا)
             alert('تم حذف العنصر بنجاح');
+            location.reload();
             });
 
             listItem.appendChild(deleteButton);

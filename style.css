@@ -638,7 +638,7 @@ font-size: 52px;
     margin-left: 30%;
 }
 .footer__content p {
-    font-size: 20px;
+    font-size: 40px;
     margin: 0px;
     font-weight: 5500;
     color: var(--white);
@@ -691,11 +691,11 @@ font-size: 52px;
 }
 .title-order{
     text-align: center;
-    font-size: 17px;
+    font-size: 37px;
 }
 .title-ordero{
     text-align: center;
-    font-size: 30px;
+    font-size: 60px;
 }
 input[type="text"], button {
     display: flex;
@@ -759,19 +759,19 @@ input[type="text"], button {
 .counter {
     display: inline-block;
     position: fixed;
-    top: 91%;
-    right: 10px;
+    bottom: 4%;
+    right: 4%;
     color: rgb(255, 255, 255);
-    background: #fc3333;
+    background: #ff4343;
     padding-left: 8px;
     padding-right: 8px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-radius: 20px;
-    font-size: 20px;
+    border-radius: 30px;
+    font-size: 50px;
 }
 .icon-1{
-    font-size: 30px;
+    font-size: 70px;
     vertical-align: middle;
     margin-left: 10px;
 
@@ -1246,7 +1246,41 @@ input[type="text"], button {
     } 
 }
 @media screen and (max-width:700px) {
-
+    .counter {
+        display: inline-block;
+        position: fixed;
+        top: 91%;
+        right: 10px;
+        color: rgb(255, 255, 255);
+        background: #fc3333;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 5px;
+        padding-bottom: 45px;
+        border-radius: 30px;
+        font-size: 20px;
+    }
+    .icon-1{
+        font-size: 40px;
+        vertical-align: middle;
+        margin-left: 10px;
+    
+    }
+    .title-order{
+        text-align: center;
+        font-size: 17px;
+    }
+    .title-ordero{
+        text-align: center;
+        font-size: 35px;
+    }
+    .footer__content p {
+        font-size: 20px;
+        margin: 0px;
+        font-weight: 5500;
+        color: var(--white);
+        line-height: 1.75rem;
+    }
     .destination__grid {
         margin-top: 4rem;
         display: flex;

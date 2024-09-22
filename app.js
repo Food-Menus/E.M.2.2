@@ -150,5 +150,3 @@ menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
 
 
 
-
-

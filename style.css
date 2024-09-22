@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Noto+Kufi+Arabic:wght@100..900&display=swap');
 
 
+
 :root {
     --primaryColor: #e57c00;
     --seconderyColor: #fdc824;
@@ -61,9 +62,6 @@ body {
     background-color: var(--seconderyColor);
     border-radius: 50px;
 }
-
-
-
 
 
 
@@ -354,19 +352,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .section__container {
     max-width: var(--max-width);
     margin: auto;
@@ -449,7 +434,6 @@ img {
 
 
 
-
 .order__container h3 {
     max-width: fit-content;
     margin-inline: auto;
@@ -517,16 +501,6 @@ img {
     color: var(--text-dark);
     line-height: 1.75rem;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -746,6 +720,7 @@ input[type="text"], button {
 }
 
 
+
 .menu {
     display: flex;
     flex-wrap: wrap;
@@ -776,6 +751,7 @@ input[type="text"], button {
     margin-left: 10px;
 
 }
+
 
 
 @media screen and (max-width:1750px) {
@@ -1593,4 +1569,3 @@ input[type="text"], button {
 
     }
 }
-

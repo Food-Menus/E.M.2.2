@@ -38,3 +38,21 @@ function openTelegram() {
     const telegramUrl = `https://t.me/${username}?start=${encodeURIComponent(message)}`;
     window.open(telegramUrl, '_blank');
 }
+
+
+
+
+const showImageBtn = document.getElementById('showImage');
+const overlayImage = document.getElementById('overlayImage');
+let isImageShown = false;
+
+showImageBtn.addEventListener('click', () => {
+    isImageShown = !isImageShown;
+    overlayImage.style.display = isImageShown ? 'flex' : 'none';
+});
+
+document.addEventListener('click', (event) => {
+    if (event.target.id === 'overlayImage') {
+        overlayImage.style.display = 'none';
+    }
+});

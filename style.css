@@ -753,9 +753,50 @@ input[type="text"], button {
 }
 
 
+#overlayImage {
+    position: fixed;
+    top: 25%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 900px;
+    height: 900px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.myButton-1{
+    max-width: 500px;
+    background: var(--greyColor) ;
+    color: var(--primaryColor);
+    margin-inline: auto;
+    margin-top: 1rem;
+    font-size: 45px;
+    font-family: "Noto Kufi Arabic", sans-serif;
+    text-align: center;
+    border-radius: 30px;
+    justify-self: center;
+}
 
 @media screen and (max-width:1750px) {
-
+    #overlayImage {
+        position: fixed;
+        top: 25%;
+        left: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        width: 700px;
+        height: 700px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     .main-highlight {
         width: 48%;
         margin: 0.1%;
@@ -876,20 +917,20 @@ input[type="text"], button {
         gap: 1rem;
         height: 400px;
     } 
-  .destination__details h4 {
-      font-size: 1.3rem;
-      font-weight: 500;
-      color: var(--text-light);
-  }
-  .destination__details h2 {
-      font-size: 2.1rem;
-      font-weight: 500;
-      color: var(--text-light);
-  }
-  .destination__details {
-      font-size: 1.3rem;
-      color: var(--text-light);
-  } 
+    .destination__details h4 {
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: var(--text-light);
+    }
+    .destination__details h2 {
+        font-size: 2.1rem;
+        font-weight: 500;
+        color: var(--text-light);
+    }
+    .destination__details {
+        font-size: 1.3rem;
+        color: var(--text-light);
+    } 
     .about-img{
         width: 40%;
         margin-top: 30px;
@@ -925,6 +966,21 @@ input[type="text"], button {
         color: var(--blackColor);
     }
     .myButton {
+        max-width: 300px;
+        background: var(--greyColor) ;
+        color: var(--primaryColor);
+        margin-inline: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 32px;
+        font-family: "Noto Kufi Arabic", sans-serif;
+        text-align: center;
+        border-radius: 30px;
+        justify-self: center;
+        box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.2); /* A subtle shadow for depth */
+
+    }
+    .myButton-1 {
         max-width: 300px;
         background: var(--greyColor) ;
         color: var(--primaryColor);
@@ -1199,13 +1255,38 @@ input[type="text"], button {
 
 }
 @media screen and (max-width:800px) {
+    #overlayImage {
+        position: fixed;
+        width: 300px;
+        top: 50%;
+        left: 50%;
+        height: 300px;
+        background:  rgba(0, 0, 0, 0.5) ; /* لون الخلفية شفافة قليلاً */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .myButton-1{
+        max-width: 300px;
+        background: var(--greyColor) ;
+        color: var(--primaryColor);
+        margin-inline: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 32px;
+        font-family: "Noto Kufi Arabic", sans-serif;
+        text-align: center;
+        border-radius: 30px;
+        justify-self: center;
+        box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.2); /* A subtle shadow for depth */
+    }
     .destination__grid {
           margin-top: 4rem;
           display: flex;
           flex-direction: row;
           gap: 1rem;
           height: 300px;
-      } 
+    } 
     .destination__details h4 {
         font-size: 1rem;
         font-weight: 500;
@@ -1302,6 +1383,31 @@ input[type="text"], button {
     }
 }
 @media screen and (max-width:415px) {
+    #overlayImage {
+        position: fixed;
+        width: 300px;
+        top: 50%;
+        left: 50%;
+        height: 300px;
+        background:  rgba(0, 0, 0, 0.5) ; /* لون الخلفية شفافة قليلاً */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .myButton-1{
+        max-width: 190px;
+        background: var(--greyColor) ;
+        color: var(--primaryColor);
+        margin-inline: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 20px;
+        font-family: "Noto Kufi Arabic", sans-serif;
+        text-align: center;
+        border-radius: 30px;
+        justify-self: center;
+        box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.2); /* A subtle shadow for depth */
+    }
     .myButton {
         max-width: 500px;
         background: var(--greyColor) ;

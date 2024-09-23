@@ -472,7 +472,7 @@ img {
 .order__grid {
     display: flex;
     flex-direction: row;
-    gap: 2rem 1rem;
+    gap: rem 1rem;
 }
 .order__card {
 

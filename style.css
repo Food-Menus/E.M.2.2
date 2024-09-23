@@ -3,11 +3,11 @@
 
 
 :root {
-    --primaryColor: #8b0404;
-    --seconderyColor: #b70000;
+    --primaryColor: #e57c00;
+    --seconderyColor: #fdc824;
     --whiteColor: #fff;
     --blackColor: #333333;
-    --softGreenColor: #ffb411;
+    --softGreenColor: #fbe0bf;
     --darkGreyColor: #a7a7a7;
     --greyColor: #f5f5f5;
 }
@@ -81,8 +81,9 @@ body {
     align-items: center;
 }
 .img {
-    width: 350px;
+    width: 450px;
     display: flex;
+    padding: 25px;
     justify-content: space-around;
     background-color: var(--whiteColor);
     border-radius: 50px;
@@ -91,7 +92,7 @@ body {
     0 0 10px rgb(255, 183, 0);
 }
 .img img {
-    width: 230px;
+    width: 430px;
     border: none;
 }
 .profile {
@@ -138,12 +139,10 @@ body {
     align-items: center;
 }
 .main-title {
-    color: #ffffff;
     font-size: 60px;
     padding-right: 15px;
 }
 .main-arrow {
-    color: #ffffff;
     font-size: 100px;
     padding-left: 15px;
     padding-top: 15px;
@@ -844,26 +843,26 @@ input[type="text"], button {
 }
 @media screen and (max-width:1350px) {
     .destination__grid {
-        margin-top: 4rem;
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        height: 400px;
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            height: 400px;
     } 
-  .destination__details h4 {
-      font-size: 1.3rem;
-      font-weight: 500;
-      color: var(--text-light);
-  }
-  .destination__details h2 {
-      font-size: 2.1rem;
-      font-weight: 500;
-      color: var(--text-light);
-  }
-  .destination__details {
-      font-size: 1.3rem;
-      color: var(--text-light);
-  } 
+    .destination__details h4 {
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: var(--text-light);
+    }
+    .destination__details h2 {
+        font-size: 2.1rem;
+        font-weight: 500;
+        color: var(--text-light);
+    }
+    .destination__details {
+        font-size: 1.3rem;
+        color: var(--text-light);
+    } 
     .highlight-card {
         display: flex;
         flex-direction: column;
@@ -1241,7 +1240,8 @@ input[type="text"], button {
         border-radius: 50%;
     }
     .img {
-        width: 150px;
+        width: 260px;
+        padding: 15px;
         display: flex;
         justify-content: space-around;
         background-color: var(--whiteColor);
@@ -1251,12 +1251,13 @@ input[type="text"], button {
         0 0 10px rgb(255, 183, 0);
     }
     .img img {
-        width: 110px;
+        width: 220px;
         border: none;
     }
 
 }
 @media screen and (max-width:800px) {
+    
     #overlayImage {
         position: fixed;
         width: 300px;
@@ -1305,6 +1306,21 @@ input[type="text"], button {
     } 
 }
 @media screen and (max-width:700px) {
+    .img {
+        width: 280px;
+        display: flex;
+        padding: 10px;
+        justify-content: space-around;
+        background-color: var(--whiteColor);
+        border-radius: 50px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 1),
+        0 0 10px rgb(248, 149, 0),
+        0 0 10px rgb(255, 183, 0);
+    }
+    .img img {
+        width: 200px;
+        border: none;
+    }
     .counter {
         display: inline-block;
         position: fixed;
@@ -1675,5 +1691,20 @@ input[type="text"], button {
         border-radius: 7px;
         box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.2); /* A subtle shadow for depth */
 
+    }
+    .img {
+        width: 200px;
+        display: flex;
+        padding: 10px;
+        justify-content: space-around;
+        background-color: var(--whiteColor);
+        border-radius: 50px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 1),
+        0 0 10px rgb(248, 149, 0),
+        0 0 10px rgb(255, 183, 0);
+    }
+    .img img {
+        width: 180px;
+        border: none;
     }
 }

@@ -567,11 +567,14 @@ font-size: 52px;
     animation-duration: 1s; /* تغيير مدة التحريك */
 }
 .footer__bar {
-    font-size: 0.9rem;
-    color: var(--white);
     text-align: center;
-    padding-top: 2rem;
-    font-size: 30px;
+    width: 100%;
+    background-color: var(--softGreenColor);
+}
+.footer__bar p{
+    color: var(--blackColor);
+    text-align: center;
+    font-size: 23px;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -1401,6 +1404,22 @@ input[type="text"], button {
     }
 }
 @media screen and (max-width:415px) {
+    .footer__bar {
+        text-align: center;
+        width: 95%;
+        background-color: var(--softGreenColor);
+    }
+    .footer__bar p{
+        color: var(--blackColor);
+        text-align: center;
+        font-size: 13px;
+        padding-bottom: 10px;
+        left: 0;
+        bottom: 0;
+        width: 105%;
+        background-color: var(--softGreenColor);
+        text-align: center;
+    }
     #overlayImage {
         position: fixed;
         width: 300px;
